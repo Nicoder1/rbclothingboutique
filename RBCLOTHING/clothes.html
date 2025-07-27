@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RB Clothing Boutique – Clothes & Pricing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: #fefefe;
+    }
+
+    header, section {
+      margin-bottom: 40px;
+    }
+
+    header img {
+      width: 200px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .item {
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+
+    p, li {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background: #333;
+      color: white;
+      border: none;
+    }
+
+    form button:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="RB.png" alt="RB Clothing Boutique Logo">
+    <h1>RB Clothing Boutique</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact & Feedback</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>What We Stitch</h2>
+
+    <div class="item">
+      <h3>Kurtis and Anarkali Suits</h3>
+      <p>From ₹1,200 – ₹3,500 depending on fabric and design complexity. Includes custom sizing, lining, and embellishments if requested.</p>
+    </div>
+
+    <div class="item">
+      <h3>Lehengas & Bridal Wear</h3>
+      <p>From ₹5,000 up to ₹25,000 for fully embellished, hand-worked bridal lehengas with designer fit and finish.</p>
+    </div>
+
+    <div class="item">
+      <h3>Western Dresses & Fusion Outfits</h3>
+      <p>₹1,800 – ₹6,000 depending on design, silhouette, and embroidery. Available in Indo-western, gowns, and cocktail looks.</p>
+    </div>
+
+    <div class="item">
+      <h3>Blouses & Custom Tops</h3>
+      <p>₹250 to ₹1,500 based on pattern, sleeves, embroidery, and neckline customization.</p>
+    </div>
+
+    <p>
+      All prices include expert tailoring, finishing, and one free size adjustment. We use premium fabrics sourced from trusted vendors.
+    </p>
+  </section>
+
+</body>
+</html>
+
+<!-- ✅ index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RB Clothing Boutique – Home</title>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(reg => console.log('SW registered'))
+        .catch(err => console.error('SW failed', err));
+    }
+  </script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+  </style>
+</head>
+<body>
+  <h1>Welcome to RB Clothing Boutique</h1>
+  <p>Your go-to for stylish ethnic and western wear.</p>
+
+  <script>
+    window.addEventListener('offline', () => {
+      alert("You're offline! Redirecting to our offline game.");
+      window.location.href = 'offline-game.html';
+    });
+  </script>
+</body>
+</html>
+
+
+<!-- ✅ contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us – RB Clothing Boutique</title>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(reg => console.log('SW registered'))
+        .catch(err => console.error('SW failed', err));
+    }
+  </script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+  </style>
+</head>
+<body>
+  <h1>Contact & Feedback</h1>
+  <p>Email: rbclothingboutique@gmail.com</p>
+  <p>Phone: +91 98765 43210</p>
+
+  <script>
+    window.addEventListener('offline', () => {
+      alert("You're offline! Redirecting to our offline game.");
+      window.location.href = 'offline-game.html';
+    });
+  </script>
+</body>
+</html>
+
+
+<!-- ✅ clothes.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clothes & Pricing – RB Clothing Boutique</title>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(reg => console.log('SW registered'))
+        .catch(err => console.error('SW failed', err));
+    }
+  </script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+    .item { margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Our Stitching & Pricing</h1>
+  <div class="item">
+    <h3>Kurtis</h3>
+    <p>₹1,200 – ₹3,500</p>
+  </div>
+  <div class="item">
+    <h3>Lehengas</h3>
+    <p>₹5,000 – ₹25,000</p>
+  </div>
+

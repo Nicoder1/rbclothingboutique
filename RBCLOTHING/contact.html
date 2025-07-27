@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us – RB Clothing Boutique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 10px;
+      margin-top: 50px;
+    }
+
+    .left, .right {
+      flex: 1;
+      padding: 20px;
+      min-width: 300px;
+    }
+
+    .left h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .left p {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    .left p strong {
+      display: inline-block;
+      width: 100px;
+    }
+
+    .right h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    form button {
+      background-color: #000;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    form button:hover {
+      background-color: #444;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RB Clothing Boutique – About Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: #fefefe;
+    }
+
+    header, section {
+      margin-bottom: 40px;
+    }
+
+    header img {
+      width: 200px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-top: 10px;
+    }
+
+    p, li {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="RB.png" alt="RB Clothing Boutique Logo">
+    <h1>RB Clothing Boutique</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="clothes.html">Clothes & Pricing</a>
+    </nav>
+  </header>
+
+
+  <div class="container">
+    <div class="left">
+      <h2>Contact Info</h2>
+      <p><strong>Phone:</strong> +91 9911810944</p>
+      <p><strong>Email:</strong> npsdesk48@gmail.com</p>
+      <p><strong>Address:</strong><br>
+        Sector 14,<br>
+        Gurugram, Haryana, India</p>
+      <p><strong>Hours:</strong> Mon–Sat, 10 AM – 7 PM</p>
+    </div>
+
+    <div class="right">
+      <h2>Send Us a Message</h2>
+      <form action="https://formsubmit.co/npsdesk48@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email Address" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+        <!-- Hidden settings for FormSubmit -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="thankyou.html">
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
+
+<!-- ✅ index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RB Clothing Boutique – Home</title>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(reg => console.log('SW registered'))
+        .catch(err => console.error('SW failed', err));
+    }
+  </script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+  </style>
+</head>
+<body>
+  <h1>Welcome to RB Clothing Boutique</h1>
+  <p>Your go-to for stylish ethnic and western wear.</p>
+
+  <script>
+    window.addEventListener('offline', () => {
+      alert("You're offline! Redirecting to our offline game.");
+      window.location.href = 'offline-game.html';
+    });
+  </script>
+</body>
+</html>
+
+
+<!-- ✅ contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us – RB Clothing Boutique</title>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(reg => console.log('SW registered'))
+        .catch(err => console.error('SW failed', err));
+    }
+  </script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+  </style>
+</head>
+<body>
+  <h1>Contact & Feedback</h1>
+  <p>Email: rbclothingboutique@gmail.com</p>
+  <p>Phone: +91 98765 43210</p>
+
+  
